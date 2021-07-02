@@ -1,3 +1,3 @@
 # Projects
 
-Projects are mede using Flask,Python,HTML and Bootstrap
+Projects are made using Flask,Python,HTML and Bootstrap
