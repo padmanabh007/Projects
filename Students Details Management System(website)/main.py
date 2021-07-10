@@ -27,7 +27,7 @@ def login():
         if data:
             global Sno
             Sno=data[0]
-            flash("LoggedIn Iucessfully",'sucess')
+            flash("LoggedIn Sucessfully",'sucess')
             return redirect(url_for('view'))
         else:
             flash('Incorrect Email or Password','danger')
@@ -51,7 +51,7 @@ def register():
        global SNo
        SNo=data[0]
        cur.close()
-       flash('Account Created Enter your details','sucess')
+       flash('Account Created ! Enter your details','sucess')
        return redirect(url_for('edit'))
     return render_template('asdregister.html',title='REGISTERPAGE',asdform=asdform)
 
@@ -154,6 +154,3 @@ def all():
         return redirect(url_for('all'))
     cur.close()
     return render_template('adminview.html',title='Full Details',forms=data)
-
-if __name__ == "__main__":
-    app.run(debug=True)
