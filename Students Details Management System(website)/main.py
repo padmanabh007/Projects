@@ -104,7 +104,7 @@ def edit():
         mysql.connection.commit()
         cur.close()
 
-        flash('Details have been Saved')
+        flash('Saved')
         return redirect(url_for('login'))
     return render_template('asdedit.html',title='EDIT')
 
@@ -134,7 +134,7 @@ def sedit():
         mysql.connection.commit()
         cur.close()
 
-        flash('Details have been Saved')
+        flash('Updataed')
         return redirect(url_for('login'))
     cur.close()
     return render_template('sedit.html',title='EDIT',form=data)
